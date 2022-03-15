@@ -37,29 +37,39 @@ Hello 👋〘 {mention} 〙,
 
 Couldn't Find {query}?  Please Click Your Request Movie Name"""
     GET_MOVIE_1 = """
-Hey {message.from_user.mention},
+📽️ **Requested Movie** : [{query}]({url})
 
-Here is the result for your {query}
+👤 **Requested By** : {mention}
 
-<b>🏷 Title</b>: <a href={url}>{title}</a>
+🎬 **Title** : [{title}]({url})
 
-🎭 Genres: {genres}
+📆 **Year** : {year}
 
-📆 Year: <a href={url}/releaseinfo>{year}</a>
+🌟 **Rating** {rating}/10
 
-🌟 Rating: <a href={url}/ratings>{rating}</a> / 10 (based on {votes} user ratings.)
+🗨️ **Genres** {genres}"""
 
-☀️ Languages : <code>{languages}</code>
 
-👥 Cast : <code>{cast}</code>
 
-📀 RunTime: {runtime} Minutes
 
-📆 Release Info : {release_date}
 
-🎛 Countries : <code>{countries}</code>
 
-Powered By {message.chat.title}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -68,29 +78,30 @@ Powered By {message.chat.title}
 
 
     GET_MOVIE_2 = """
-Hey {message.from_user.mention},
+📽️ **Requested Movie** : {query}
 
-Here is the result for your {query}
+👤 **Requested By** : {mention}
 
-<b>🏷 Title</b>: <a href={url}>{title}</a>
+    
 
-🎭 Genres: {genres}
 
-📆 Year: <a href={url}/releaseinfo>{year}</a>
 
-🌟 Rating: <a href={url}/ratings>{rating}</a> / 10 (based on {votes} user ratings.)
 
-☀️ Languages : <code>{languages}</code>
 
-👥 Cast : <code>{cast}</code>
 
-📀 RunTime: {runtime} Minutes
 
-📆 Release Info : {release_date}
 
-🎛 Countries : <code>{countries}</code>
 
-Powered By {message.chat.title}
+
+
+
+
+
+
+
+
+
+
 
 
 © **{chat}**"""
