@@ -2,22 +2,22 @@ class LuciferMoringstar(object):
 
     DEFAULT_MSG = """👋Hello {mention}.....!!!\nIt's Power Full [{bot_name}](t.me/{bot_username}) Here 😎\nAdd Me To Your Group And Make Sure I'm an Admin There! \nAnd Enjoy My Pever Show.....!!!🤪"""
 
-    HELP_MSG = """**You can contact me @howtodoyt**"""
+    HELP_MSG = """**You can contact me @mastertheblasterr**"""
 
     ABOUT_MSG = """
 🤖 My Name [{bot_name}](t.me/{bot_username})
 
-🧑 My Dev : [HOWTODO](t.me/howtodoyt)
+🧑 My Dev : [Decoder Seeman](t.me/mastertheblasterr)
 
 🧑 My Creator : {dev_name}
 
-📦 My Source : [Click Here](https://github.com/bossstory/LuciferMoringstar-Robot)
+📦 My Source : [Click Here](https://t.me/Mastertheblasterr)
 
-📺 My Youtube : [Ckick Here](https://www.youtube.com/channel/UCohk_mpuW8SpgZMyOzRdKcA)
+🎥 My Movies Channel : [MKV RockerS](https://t.me/mkv_rockers)
 
-🏷️ My Updates : [HOW TO DO](t.me/HTDGROUPFORMOVIES)
+🏷️ My Movie Request Group : [MKV Request Eoom](https://t.me/mkvrequestroom)
 
-🗣️ My Support : [Any Doubt](t.me/howtodoyt)"""
+🗣️ My Support : [Any Doubt](t.me/mastertheblasterr)"""
 
     FILE_CAPTIONS = """Hello 👋 {mention}\n\n📁Title {title}\n\n🔘Size {size}"""
 
@@ -37,16 +37,60 @@ Hello 👋〘 {mention} 〙,
 
 Couldn't Find {query}?  Please Click Your Request Movie Name"""
     GET_MOVIE_1 = """
-📽️ Requested Movie : [{query}]({url})
-👤 Requested By : {mention}
-🎬 Title : [{title}]({url})
-📆 Year : {year}
-🌟 Rating {rating}/10
-🗨️ Genres {genres}"""
+Hey {message.from_user.mention},
+
+Here is the result for your {query}
+
+<b>🏷 Title</b>: <a href={url}>{title}</a>
+
+🎭 Genres: {genres}
+
+📆 Year: <a href={url}/releaseinfo>{year}</a>
+
+🌟 Rating: <a href={url}/ratings>{rating}</a> / 10 (based on {votes} user ratings.)
+
+☀️ Languages : <code>{languages}</code>
+
+👥 Cast : <code>{cast}</code>
+
+📀 RunTime: {runtime} Minutes
+
+📆 Release Info : {release_date}
+
+🎛 Countries : <code>{countries}</code>
+
+Powered By {message.chat.title}
+
+
+
+
+"""
 
 
     GET_MOVIE_2 = """
-📽️ Requested Movie : {query}
-👤 Requested By : {mention}
+Hey {message.from_user.mention},
+
+Here is the result for your {query}
+
+<b>🏷 Title</b>: <a href={url}>{title}</a>
+
+🎭 Genres: {genres}
+
+📆 Year: <a href={url}/releaseinfo>{year}</a>
+
+🌟 Rating: <a href={url}/ratings>{rating}</a> / 10 (based on {votes} user ratings.)
+
+☀️ Languages : <code>{languages}</code>
+
+👥 Cast : <code>{cast}</code>
+
+📀 RunTime: {runtime} Minutes
+
+📆 Release Info : {release_date}
+
+🎛 Countries : <code>{countries}</code>
+
+Powered By {message.chat.title}
+
 
 © **{chat}**"""
